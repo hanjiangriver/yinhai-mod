@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yinhai-mod.iml" filepath="$PROJECT_DIR$/yinhai-mod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yinhai-mod/yinhai-mod-web/yinhai-mod-web.iml" filepath="$PROJECT_DIR$/../yinhai-mod/yinhai-mod-web/yinhai-mod-web.iml" />
+    </modules>
+  </component>
+</project>

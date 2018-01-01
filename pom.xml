@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zhj</groupId>
+    <artifactId>yinhai-mod</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>yinhai-mod-web</module>
+    </modules>
+
+
+
+    <distributionManagement>
+        <repository>
+             <id>nexus-releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshot</id>
+            <name>Nexus snapshot Repository</name>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+       <plugins>
+           <plugin>
+               <groupId>com.zhj</groupId>
+               <artifactId>yinhai-plugin</artifactId>
+               <version>1.0-SNAPSHOT</version>
+               <configuration>
+                   <msg>river</msg>
+                   <options>
+                       <option>one</option>
+                       <option>two</option>
+                   </options>
+                   <args>${project.basedir}</args>
+               </configuration>
+               <executions>
+                   <execution>
+                       <phase>compile</phase>
+                       <goals>
+                           <goal>yinhai</goal>
+                       </goals>
+                   </execution>
+               </executions>
+           </plugin>
+       </plugins>
+    </build>
+
+
+</project>
